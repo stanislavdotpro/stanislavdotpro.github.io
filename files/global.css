@@ -1,0 +1,55 @@
+body
+{
+	font-family: Gill Sans MT;
+    color: #1d1b1a;
+	background-color: #fafafa;
+    font-size: 17px;
+	margin-top: 32px;
+}
+img
+{
+	display: block;
+}
+.table
+{
+	display: table;
+	width: 960px;
+	margin: auto;
+}
+.row
+{
+	display: table-row;
+	height: 240px;
+}
+.column
+{
+	display: table-cell;
+	vertical-align: top;
+	padding: 16px;
+	width: 320px;
+}
+.center_text
+{
+	text-align: center;
+}
+@font-face
+{
+	font-family: Gill Sans MT;
+	src: url(../fonts/gill_sans_regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: Gill Sans MT;
+	src: url(../fonts/gill_sans_light_italic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face
+{
+	font-family: Gill Sans MT;
+	src: url(../fonts/gill_sans_bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
