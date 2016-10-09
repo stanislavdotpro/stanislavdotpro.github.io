@@ -1,8 +1,8 @@
 body
 {
-	font-family: Gill Sans MT;
+	font-family: Canaro;
     color: #1d1b1a;
-	background-color: #fafafa;
+	background-image: url(background.jpg);
     font-size: 17px;
 	margin-top: 32px;
 }
@@ -28,28 +28,28 @@ img
 	padding: 16px;
 	width: 320px;
 }
-.center_text
+.free_height_row
 {
-	text-align: center;
+	display: table-row;
 }
 @font-face
 {
-	font-family: Gill Sans MT;
-	src: url(../fonts/gill_sans_regular.ttf);
+	font-family: Canaro;
+	src: url(canaro_book.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face
 {
-	font-family: Gill Sans MT;
-	src: url(../fonts/gill_sans_light_italic.ttf);
+	font-family: Canaro;
+	src: url(canaro_book_italic.ttf);
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face
 {
-	font-family: Gill Sans MT;
-	src: url(../fonts/gill_sans_bold.ttf);
+	font-family: Canaro;
+	src: url(canaro_bold.ttf);
 	font-weight: bold;
 	font-style: normal;
 }
