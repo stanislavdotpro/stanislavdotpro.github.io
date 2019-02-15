@@ -1,0 +1,192 @@
+body
+{
+  margin: 0em;
+  background-color: #333333; /* gray */
+  color: #fafafa; /* white */
+  font-family: Canaro;
+}
+h1
+{
+  font-size: 6em;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+h2
+{
+  font-size: 3em;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+h3
+{
+  font-size: 3em;
+  font-style: normal;
+  font-weight: normal;
+}
+h4
+{
+  font-size: 2.25em;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+h5
+{
+  font-size: 2.0em;
+  font-style: normal;
+  font-weight: normal;
+}
+p
+{
+  font-size: 2.25em;
+  font-style: normal;
+  font-weight: normal;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(1, 0.95fr);
+  gap: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  justify-content: center;
+}
+.container div > img
+{
+  object-fit: cover;
+  width: 100%;
+}
+.headline
+{
+  display: grid;
+  align-content: center;
+}
+.nonselectable
+{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#header
+{
+  padding: 0.75em;
+  padding-left: 2em;
+  text-align: center;
+}
+#footer
+{
+  padding: 1em;
+  text-align: center;
+}
+#logotype
+{
+  margin: 0em;
+}
+#whitebox
+{
+  background-color: #fafafa; /* white */
+  color: #1d1d1d; /* black */
+}
+#blackbox
+{
+  background-color: #1d1d1d; /* black */
+  color: #fafafa; /* white */
+}
+#contact:after
+{
+  content: attr(user) "@" attr(domain) "." attr(extension) " | " attr(code) attr(operator) attr(number) " | " attr(city) ", " attr(country);
+}
+@font-face
+{
+  font-family: Canaro;
+  src: url(fonts/canaro_book.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: Canaro;
+  src: url(fonts/canaro_book_italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face
+{
+  font-family: Canaro;
+  src: url(fonts/canaro_bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+/* Width enough to fit enought at least 3 columns with either low or high resolution display */
+@media (min-width: 48em) and (max-resolution: 192dpi), (min-width: 96em) and (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) and (min-width: 96em)
+{
+  h1
+  {
+    font-size: 3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  h2
+  {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+  }
+  h3
+  {
+    font-size: 1.5em;
+  }
+  h4
+  {
+    font-size: 1.125em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  h5
+  {
+    font-size: 1.0em;
+  }
+  p
+  {
+    font-size: 1.125em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  .container
+  {
+    grid-template-columns: repeat(auto-fit, 20em);
+    gap: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
